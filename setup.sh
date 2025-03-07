@@ -2,12 +2,11 @@
 
 QMK_DIR="$HOME/qmk_firmware"  # Path to your QMK firmware directory
 KEYBOARD="splitkb/aurora/sofle_v2"             # Your keyboard name
-KEYMAP="yourusername"         # Your keymap name
+KEYMAP="henrybley"         # Your keymap name
 REPO_DIR="$HOME/my_qmk_keymap" # Where to create your keymap repo
 
 if [ ! -d "$QMK_DIR" ]; then
   echo "QMK directory not found at $QMK_DIR"
-  echo "Usage: ./setup.sh [QMK_DIR] [KEYBOARD] [KEYMAP]"
   exit 1
 fi
 
@@ -24,4 +23,3 @@ for file in *.{c,h,json,mk}; do
 done
 
 echo "Setup complete. Your keymap files are now symlinked to QMK."
-EOF
