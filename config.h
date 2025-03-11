@@ -19,10 +19,22 @@
 #define RGB_MATRIX_SLEEP
 #define RGB_MATRIX_KEYPRESSES
 #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
+#define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
+#define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_RAINBOW_BEACON
 #define ENABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT
+#define ENABLE_RGB_MATRIX_BREATHING           // Single color breathing
+#define ENABLE_RGB_MATRIX_BAND_SAT            // Band of color with varying saturation
+#define ENABLE_RGB_MATRIX_BAND_VAL            // Band of color with varying brightness
+
+#define RGB_MATRIX_HUE_STEP 8     // How much the hue changes with each press
+#define RGB_MATRIX_SAT_STEP 16    // How much the saturation changes
+#define RGB_MATRIX_VAL_STEP 16    // How much the brightness changes
+#define RGB_MATRIX_SPD_STEP 16    // How much the speed changes
+
+#define COLOR_COUNT 8
 
 #define MAX_DEFERRED_EXECUTORS 10
 
-#define SMTD_GLOBAL_RELEASE_TERM 50
+#define TAPPING_TERM 150 // Tapping term for SM_TD
